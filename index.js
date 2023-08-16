@@ -2,7 +2,7 @@ const express = require("express");//Importando epress
 const app = express();//inicalizando  o express
 
 app.get("/", function(req, res){
-  res.send("Bem vindo ao Guia do Programador");
+  res.send("<h1>Bem vindo ao Guia do Programador</h1>");
 });
 
 app.get("/Blog", function(req, res){
