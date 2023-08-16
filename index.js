@@ -13,6 +13,12 @@ app.get("/Canal", function(req, res){
   res.send("Bem vindo ao Meu Canal");
 });
 
+app.get("/Ola/:nome", function(req, res){
+  var nome = req.params.nome;
+  res.send("<h1>Oi " + nome + "</h1>");
+});
+
+
 
 
 app.listen(4000, function (erro) {
